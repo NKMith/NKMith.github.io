@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
+        const yOffset = -10; // Adjust for sticky header height
+        const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
       }
     });
   });
@@ -14,10 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const heroBtn = document.querySelector('.hero-btn');
   if (heroBtn) {
     heroBtn.addEventListener('click', function(e) {
-      const introSection = document.querySelector('#intro-text');
+      const introSection = document.querySelector('#intro');
       if (introSection) {
         e.preventDefault();
-        introSection.scrollIntoView({ behavior: 'smooth' });
+        const yOffset = -64; // Adjust for sticky header height
+        const y = introSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
       }
     });
   }
