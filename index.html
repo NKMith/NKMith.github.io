@@ -20,6 +20,7 @@
   </script>
 </head>
 <body>
+  <script src="scripts.js"></script>
   <section class="hero">
     <div class="hero-overlay">
       <h1 class="hero-title">
@@ -29,29 +30,14 @@
         Fighting bugs like they're boss battles. <br>
         Pushing commits like knockback+3 swords.
       </p>
-      <a href="#intro" class="hero-btn">Find out who I am</a>
+      <a href="#projects" class="hero-btn">Find out who I am</a> 
+      <!-- TODO - Doesn't scroll down -->
     </div>
   </section>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const name = "Nicholas Kim";  // Name to be typed out
-      const target = document.getElementById('typed-name');
-      const cursor = document.getElementById('typed-cursor');
-      let i = 0;
-      function type() {
-        if (i <= name.length) {
-          target.textContent = name.slice(0, i);
-          cursor.style.display = "inline-block";
-          i++;
-          setTimeout(type, 25);
-        } else {
-          cursor.style.display = "inline-block";
-        }
-      }
-      type();
-    });
-  </script>
+  <!-- <script>
+    
+  </script> -->
 
   <header class="sticky-header">
     <div class="header-left">
@@ -105,7 +91,14 @@
           <h3>OSI Maritime Systems @ Burnaby, BC</h3>
           <div class="exp-role">Software Engineering Test Co-op</div>
           <div class="exp-date">Jan. 2025 - Present</div>
-          <div class="exp-desc">Description</div>
+          <div class="exp-desc">
+            <ul>
+              <li>Efficiently wrote Python scripts for regression tests of the company's maritime navigation software, effectively catching 10 major and minor bugs </li>
+              <li>Organized the company's JIRA (database platform for test instructions and requirements) by writing a program utilizing JIRA's REST API and HTTP requests </li>
+              <li>Effectively cooperated in debugging an in-house application, finding the bug's source and fixing it</li>
+              <li>Updated and configured Powershell scripts for deploying software products into appropriate hardware by cooperating with other developers and experimenting in the company's equipment lab</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="timeline-item">
@@ -117,7 +110,10 @@
           <div class="exp-role">CalcConnect Peer Mentor</div>
           <div class="exp-date">Date - Date</div>
           <div class="exp-desc">
-            Description
+            <ul>
+              <li>Devoted 4 hours weekly to teach and assist students in SFU's MATH150 weekly seminars, complimented for professionalism that interested students into becoming peer tutors in future </li>
+              <li>Carefully analyzed students' questions and answers, and gave appropriate feedback to maximize teaching effectiveness and efficiency </li>
+            </ul>
           </div>
         </div>
       </div>
