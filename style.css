@@ -111,11 +111,28 @@ footer {
   z-index: 100;
 }
 
+.floating-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
 .floating-social a img {
   width: 28px;
   height: 28px;
   opacity: 0.85;
   transition: opacity 0.2s, transform 0.2s;
+}
+
+.floating-social a:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  transform: scale(1.08);
 }
 
 .floating-social a:hover img {
