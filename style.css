@@ -396,3 +396,27 @@ h3 {
     margin-bottom: 1em;
   }
 }
+
+
+.project-tags {
+  margin-top: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #060043;
+  color: white;
+  font-size: 0.95rem;
+  padding: 0.3em 0.75em;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease;
+}
+
+.tag:hover {
+  background-color: #222;
+}
